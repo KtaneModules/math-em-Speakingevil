@@ -1,1 +1,1 @@
-# math-em
+#[ModKit Wiki](../../wiki)

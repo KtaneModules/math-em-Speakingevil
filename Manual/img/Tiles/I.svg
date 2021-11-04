@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="93.4mm" height="115mm" version="1.1" viewBox="0 0 93.4 115" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<style/>
+<metadata>
+<rdf:RDF>
+<cc:Work rdf:about="">
+<dc:format>image/svg+xml</dc:format>
+<dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+<dc:title/>
+</cc:Work>
+</rdf:RDF>
+</metadata>
+<rect width="93.4" height="115" fill="#025"/>
+<path transform="scale(1,-1)" d="m70.806-15.678a23.748 8.3159 0 0 1-12.7 7.3612 23.748 8.3159 0 0 1-24.516-0.51205 23.748 8.3159 0 0 1-10.111-7.8376" fill="none" stroke="#fff" stroke-width="3.5776"/>
+<path d="m70.806 100.37a23.748 8.3159 0 0 1-12.7 7.3612 23.748 8.3159 0 0 1-24.516-0.51205 23.748 8.3159 0 0 1-10.111-7.8376" fill="none" stroke="#fff" stroke-width="3.5776"/>
+<path d="m13.607 34.074a8.3159 23.748 0 0 0-7.3612 12.7 8.3159 23.748 0 0 0 0.51205 24.516 8.3159 23.748 0 0 0 7.8376 10.111m10.397 19.378h-11.246v-21.099m11.246-64.41h-11.246v20.57" fill="none" stroke="#fff" stroke-width="3.5776"/>
+<path transform="rotate(-90)" d="m-34.088 80.356a23.748 8.3159 0 0 1-12.7 7.3612 23.748 8.3159 0 0 1-24.516-0.51205 23.748 8.3159 0 0 1-10.111-7.8376m-19.365-10.242v11.246h21.099m64.41-11.246v11.246h-20.57" fill="#025" stroke="#fff" stroke-width="3.5776"/>
+<path d="m20.391 8.0649h-13.591v24.037" fill="none" stroke="#fff" stroke-width="4.6419"/>
+<path d="m73.728 8.0649h13.591v24.037" fill="none" stroke="#fff" stroke-width="4.6419"/>
+<path d="m20.391 107.98h-13.591v-24.655" fill="none" stroke="#fff" stroke-width="4.6419"/>
+<path d="m73.728 107.98h13.591v-24.655" fill="none" stroke="#fff" stroke-width="4.6419"/>
+<circle cx="46.806" cy="58.084" r="18.19" fill="none" stroke="#fff" stroke-width="4"/>
+<path d="m11.782 57.969h17.57" fill="none" stroke="#fff" stroke-width="4"/>
+<path d="m81.45 57.969h-18.397" fill="none" stroke="#fff" stroke-width="4"/>
+<path d="m47.129 40.101v-25.011" fill="none" stroke="#fff" stroke-width="4"/>
+<path d="m47.129 101.86v-26.045" fill="none" stroke="#fff" stroke-width="4"/>
+<path d="m33.784 44.028 26.355 26.355" fill="none" stroke="#fff" stroke-width="4"/>
+<path d="m60.139 44.028-26.355 26.355" fill="none" stroke="#fff" stroke-width="4"/>
+<path transform="rotate(-90)" d="m-77.042 21.438a15.71 15.71 0 0 1-4.6431 11.15 15.71 15.71 0 0 1-11.185 4.5591l0.11811-15.709z" fill="none" stroke="#fff" stroke-width="4"/>
+<path transform="rotate(90)" d="m39.348-72.081a15.71 15.71 0 0 1-4.6431 11.15 15.71 15.71 0 0 1-11.185 4.5591l0.11811-15.709z" fill="none" stroke="#fff" stroke-width="4"/>
+<circle cx="26.111" cy="27.971" r="5.9945" fill="none" stroke="#fff" stroke-width="4"/>
+<path d="m31.626 28.112h7.8548" fill="none" stroke="#fff" stroke-width="4"/>
+<path d="m19.43 57.464v-14.676" fill="none" stroke="#fff" stroke-width="4"/>
+<path d="m74.116 57.878v15.503" fill="none" stroke="#fff" stroke-width="4"/>
+<path d="m55.348 88.032h7.8548" fill="none" stroke="#fff" stroke-width="4"/>
+<circle cx="68.229" cy="88.098" r="5.9945" fill="none" stroke="#fff" stroke-width="4"/>
+<path d="m14.469 16.123c2.0673 2.7564 4.1343 5.5124 6.2012 8.2682" fill="none" stroke="#fff" stroke-width="4"/>
+<path d="m72.554 90.951c2.6874 3.6521 5.3746 7.3039 8.0615 10.955" fill="none" stroke="#fff" stroke-width="4"/>
+<path d="m13.849 57.355c-2.6872 2.6872-5.3743 5.3743-8.0615 8.0615" fill="none" stroke="#fff" stroke-width="4"/>
+<path d="m79.995 58.2 7.8548-7.8548" fill="none" stroke="#fff" stroke-width="4"/>
+</svg>

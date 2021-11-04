@@ -1,0 +1,15 @@
+01 +  =  A + B
+03 -  =  |A - B|
+07 /  =  max(A, B) % min(A, B)
+15 ^  =  Bitwise XOR
+
+02 ++ = sqrt(A ^ 2 + B ^ 2)
+04 +- = B-Tritwise Muliplication
+08 +/ = 2 * A * B / (A + B)
+16 +^ = Bitwise OR
+06 -- = sqrt(min(A, B) ^ 2 - (A - B) ^ 2)
+10 -/ = floor(log10(A)) ^ 2 + floor(log10(B)) ^ 2
+18 -^ = Bitwise AND
+14 // = min(A, B) % (max(A, B) % min(A, B))
+22 /^ = (1s in bin(A)) * (1s in bin(B))
+30 ^^ = Bitwise XOR then CA Rule 30
