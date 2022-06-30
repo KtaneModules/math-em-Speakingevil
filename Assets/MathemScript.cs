@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -62,6 +62,18 @@ public class MathemScript : MonoBehaviour {
         return b;
     }
 
+    private long Sqr(long x)
+    {
+        long r = x / 2;
+        long q = 0;
+        while (r != q)
+        {
+            q = r;
+            r = (r + (x / r)) / 2;
+        }
+        return r;
+    }
+
     private long Op(long a, long b, int k)
     {
         if (b > a)
@@ -73,15 +85,13 @@ public class MathemScript : MonoBehaviour {
         switch (k)
         {
             case 1: return a + b;
-            case 2: return (int)(2 * Mathf.Sqrt((a * a) + (b * b)));
+            case 2: return 2 * Sqr((a * a) + (b * b));
             case 3: return a - b;
             case 4: string[] bter = new string[2] { Balter(a), Balter(b) };
-                int btprod = 0;
-                int btrit = 1;
-                for(int i = 0; i < bter[0].Length; i++)
+                long btprod = 0;
+                long btrit = 1;
+                for(int i = 0; i < bter[1].Length; i++)
                 {
-                    if (i == bter[1].Length)
-                        break;
                     if (bter[0][i] != '0' && bter[1][i] != '0')
                         if (bter[0][i] == bter[1][i])
                             btprod += btrit;
@@ -89,17 +99,19 @@ public class MathemScript : MonoBehaviour {
                             btprod -= btrit;
                     btrit *= 3;
                 }
-                return Mathf.Abs(btprod);
-            case 6: return (int)Mathf.Sqrt(Mathf.Abs((b * b) - ((a - b) * (a - b))));
+                return btprod < 0 ? -btprod : btprod;
+            case 6: return Sqr(Math.Abs((b * b) - ((a - b) * (a - b))));
             case 7: return b == 0 ? 0 : a % b;
-            case 8: return (2 * a * b) / (a + b);
-            case 10: int[] l = new int[2] { (int)Mathf.Log10(a) + 1, (int)Mathf.Log10(b) + 1};
+            case 8: double[] t = new double[4] { Math.Log10(a), Math.Log10(b), Math.Log10((a + b) / 2), 0};
+                t[3] = t[0] + t[1] - t[2];
+                return (long)Math.Pow(10, t[3]);
+            case 10: int[] l = new int[2] { (int)Math.Log10(a) + 1, (int)Math.Log10(b) + 1};
                 return (l[0] * l[0]) + (l[1] * l[1]);
             case 14: return b == 0 ? 0 : (a % b == 0 ? 0 : b % (a % b));
             default: string[] bin = new string[2] { Bin(a), Bin(b)};            
-                int output = 0;
+                long output = 0;
                 string xor = "";
-                int d = 1;
+                long d = 1;
                 if (k == 22)
                     return bin[0].Count(x => x == 'T') * bin[1].Count(x => x == 'T');
                 for (int i = 0; i < bin[0].Length; i++)
@@ -576,8 +588,8 @@ public class MathemScript : MonoBehaviour {
             {
                 yield return null;
                 keys[10].OnInteract();
-                yield break;
             }
+            yield break;
         }
         if(command == "submit")
         {
