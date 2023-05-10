@@ -226,12 +226,18 @@ public class MathemScript : MonoBehaviour {
             switch(tprops[s[i], 0])
             {
                 case 0:
-                    d *= 10;
-                    d += tprops[s[i], 2];
+                    if (d < 10000000)
+                    {
+                        d *= 10;
+                        d += tprops[s[i], 2];
+                    }
                     break;
                 case 1:
-                    d *= 10;
-                    d += Eval(i, tprops[s[i], 2], tprops[s[i], 1]);
+                    if (d < 10000000)
+                    {
+                        d *= 10;
+                        d += Eval(i, tprops[s[i], 2], tprops[s[i], 1]);
+                    }
                     break;
                 default:
                     if(i > 0 && i < 15 && tprops[s[i + 1], 0] < 2 && !(i == 1 && tprops[s[0], 0] == 2))
