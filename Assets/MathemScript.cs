@@ -629,4 +629,75 @@ public class MathemScript : MonoBehaviour {
             }
         }
     }
+
+    // Autosolver by Kilo Bites
+
+    IEnumerator TwitchHandleForcedSolve()
+    {
+        yield return null;
+
+        while (!active[0])
+        {
+            yield return true;
+        }
+
+        if (disp.text != "0")
+        {
+            while (!ans.ToString().StartsWith(disp.text))
+            {
+                if (disp.text == "0")
+                {
+                    break;
+                }
+                keys[10].OnInteract();
+                yield return new WaitForSeconds(0.1f);
+            }
+        }
+
+        if (!phasetwo && !active[1])
+        {
+
+            var answerKeyA = ans.ToString().Select(x => "0123456789".IndexOf(x)).ToArray();
+            var startingIx = disp.text == "0" ? 0 : disp.text.Length;
+
+            for (int i = startingIx; i < answerKeyA.Length; i++)
+            {
+                keys[answerKeyA[i]].OnInteract();
+                yield return new WaitForSeconds(0.1f);
+            }
+
+            keys[11].OnInteract();
+            yield return new WaitForSeconds(0.1f);
+
+            while (!active[1])
+            {
+                yield return true;
+            }
+        }
+
+        if (active[1])
+        {
+            keys[12].OnInteract();
+            yield return new WaitForSeconds(0.1f);
+        }
+        while (!active[0])
+        {
+            yield return true;
+        }
+        if (phasetwo)
+        {
+            var answerKeyB = ans.ToString().Select(x => "0123456789".IndexOf(x)).ToArray();
+            var startingIx = disp.text == "0" ? 0 : disp.text.Length;
+
+            for (int i = startingIx; i < answerKeyB.Length; i++)
+            {
+                keys[answerKeyB[i]].OnInteract();
+                yield return new WaitForSeconds(0.1f);
+            }
+
+            keys[11].OnInteract();
+            yield return new WaitForSeconds(0.1f);
+            
+        }
+    }
 }
